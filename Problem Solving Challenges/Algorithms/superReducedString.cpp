@@ -10,7 +10,6 @@ for(int i = 1; i < v.size(); i++){
         //checking if s[i-1] != s[i]
         //else removing the twosimliar characters from the vector using erase method
         auto it = v.begin(); // initial pos denoting iterator
-        cout<<"i-1 : "<<*(it+(i-1))<<" i : "<<*(it+i)<<endl;
         v.erase(it+(i-1),it+(i+1)); // i+1 not included
         i = 0; // setting i back to 0 whenever this "if block" excutes
     }
